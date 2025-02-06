@@ -50,7 +50,21 @@ export default function Home() {
 
         <div className="w-5/6 sm:w-3/5 lg:w-2/3 xl:w-1/3 2xl:w-1/4 mx-auto h-px bg-zinc-50" />
 
-        <p className="text-xl md:text-3xl tabular-nums">{timeTogether}</p>
+        <p className="text-xl md:text-3xl tabular-nums select-none">
+          {timeTogether}
+        </p>
+      </div>
+
+      <div className="w-full px-4 md:w-1/2 xl:w-1/3 mt-8">
+        <iframe
+          title="spotify"
+          className="rounded-xl"
+          src="https://open.spotify.com/embed/track/5iSkdzgBBtAAkaqULGPZUd?utm_source=generator"
+          width="100%"
+          height="240"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        />
       </div>
     </div>
   )
