@@ -6,6 +6,7 @@ import {
   Monsieur_La_Doulaise,
 } from 'next/font/google'
 import './globals.css'
+import { Header } from '@/components/header'
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -43,6 +44,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${monsieurLaDoulaise.variable} antialiased bg-neutral-200`}
       >
+        <Header />
+
         {children}
       </body>
     </html>
