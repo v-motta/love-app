@@ -46,11 +46,11 @@ export default function Home() {
       <ImagesSection />
 
       <div className="font-medium lg:px-24 bg-stone-700/90 text-zinc-50 font-bodoni-moda w-full py-5 space-y-4 text-center">
-        <h1 className="text-3xl md:text-4xl">Time together</h1>
+        <h1 className="text-2xl md:text-4xl">Time together</h1>
 
         <div className="w-5/6 sm:w-3/5 lg:w-2/3 xl:w-1/3 2xl:w-1/4 mx-auto h-px bg-zinc-50" />
 
-        <p className="text-2xl md:text-3xl tabular-nums">{timeTogether}</p>
+        <p className="text-xl md:text-3xl tabular-nums">{timeTogether}</p>
       </div>
     </div>
   )
