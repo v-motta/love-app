@@ -59,7 +59,7 @@ export default function Home() {
         <iframe
           title="spotify"
           className="rounded-xl"
-          src="https://open.spotify.com/embed/track/5iSkdzgBBtAAkaqULGPZUd?utm_source=generator"
+          src="https://open.spotify.com/embed/track/5iSkdzgBBtAAkaqULGPZUd?utm_source=generator&theme=0"
           width="100%"
           height="240"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
