@@ -10,9 +10,9 @@ import {
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
-import meAndHer1 from '../../public/me-n-her-1.jpg'
-import meAndHer2 from '../../public/me-n-her-2.jpg'
-import meAndHer3 from '../../public/me-n-her-3.jpg'
+import meAndHer1 from '../../../public/me-n-her-1.jpg'
+import meAndHer2 from '../../../public/me-n-her-2.jpg'
+import meAndHer3 from '../../../public/me-n-her-3.jpg'
 
 export default function Home() {
   const [timeTogether, setTimeTogether] = useState('')
@@ -68,7 +68,7 @@ export default function Home() {
           />
         </div>
         <span className="absolute text-zinc-50 -translate-x-1/2 top-1/3 left-1/2 text-3xl md:text-5xl text-nowrap lg:text-6xl xl:text-8xl font-monsieurLaDoulaise">
-          Vinicius & Mayara
+          Mayara & Vinicius
         </span>
       </div>
 
