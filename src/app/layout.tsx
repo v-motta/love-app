@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import {
+  Bodoni_Moda,
   Cormorant,
   Geist,
   Geist_Mono,
@@ -29,6 +30,11 @@ const monsieurLaDoulaise = Monsieur_La_Doulaise({
   weight: '400',
 })
 
+const bodoniModa = Bodoni_Moda({
+  variable: '--font-bodoni-moda',
+  subsets: ['latin'],
+})
+
 export const metadata: Metadata = {
   title: 'Me and May',
   description: 'Uma página dedicada ao nosso amor',
@@ -42,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${monsieurLaDoulaise.variable} antialiased bg-neutral-200`}
+        className={`${geistSans.variable} ${geistMono.variable} ${cormorant.variable} ${monsieurLaDoulaise.variable} ${bodoniModa.variable} antialiased bg-stone-300`}
       >
         <Header />
 

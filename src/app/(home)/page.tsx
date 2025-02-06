@@ -18,13 +18,21 @@ export default function Home() {
     const updateTimer = () => {
       const now = new Date()
 
-      const years = differenceInYears(now, startDate)
-      const days = differenceInDays(now, startDate) % 365
-      const hours = differenceInHours(now, startDate) % 24
-      const minutes = differenceInMinutes(now, startDate) % 60
-      const seconds = differenceInSeconds(now, startDate) % 60
+      const diffInYears = differenceInYears(now, startDate)
+      const diffInDays = differenceInDays(now, startDate) % 365
+      const diffInHours = differenceInHours(now, startDate) % 24
+      const diffInMinutes = differenceInMinutes(now, startDate) % 60
+      const diffInSeconds = differenceInSeconds(now, startDate) % 60
 
-      setTimeTogether(`${years}y ${days}d ${hours}h ${minutes}m ${seconds}s`)
+      const years = String(diffInYears).padStart(2, '0')
+      const days = String(diffInDays).padStart(2, '0')
+      const hours = String(diffInHours).padStart(2, '0')
+      const minutes = String(diffInMinutes).padStart(2, '0')
+      const seconds = String(diffInSeconds).padStart(2, '0')
+
+      setTimeTogether(
+        `${years}y • ${days}d • ${hours}h • ${minutes}m • ${seconds}s`
+      )
     }
 
     updateTimer()
@@ -37,7 +45,13 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center">
       <ImagesSection />
 
-      <p className="text-3xl font-bold">{timeTogether}</p>
+      <div className="font-medium lg:px-24 bg-stone-700/90 text-zinc-50 font-bodoni-moda w-full py-5 space-y-4 text-center">
+        <h1 className="text-3xl md:text-4xl">Time together</h1>
+
+        <div className="w-5/6 sm:w-3/5 lg:w-2/3 xl:w-1/3 2xl:w-1/4 mx-auto h-px bg-zinc-50" />
+
+        <p className="text-2xl md:text-3xl tabular-nums">{timeTogether}</p>
+      </div>
     </div>
   )
 }

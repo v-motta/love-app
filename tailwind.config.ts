@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         cormorant: 'var(--font-cormorant)',
-        monsieurLaDoulaise: 'var(--font-monsieur-la-doulaise)',
+        'monsieur-la-doulaise': 'var(--font-monsieur-la-doulaise)',
+        'bodoni-moda': 'var(--font-bodoni-moda)',
       },
     },
   },

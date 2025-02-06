@@ -26,7 +26,7 @@ export function ImagesSection() {
           className="object-cover hidden md:block h-64 md:h-96 2xl:h-[37rem]"
         />
       </div>
-      <span className="absolute text-zinc-50 -translate-x-1/2 top-1/3 left-1/2 text-3xl md:text-5xl text-nowrap lg:text-6xl xl:text-8xl font-monsieurLaDoulaise">
+      <span className="absolute text-zinc-50 -translate-x-1/2 top-1/3 left-1/2 text-3xl md:text-5xl text-nowrap lg:text-6xl xl:text-8xl font-monsieur-la-doulaise">
         Mayara & Vinicius
       </span>
     </div>
